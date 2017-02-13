@@ -11,7 +11,7 @@ OUTPUT=mpi_hello
 all: $(OUTPUT)
 
 $(OUTPUT): $(FILE)
-	$(CC) $(CXXFLAGS) -o $(OUTPUT) $(LIBS)
+	$(CC) $(CXXFLAGS) -o $(OUTPUT) $(FILE) $(LIBS)
 
 # use this to run
 run: $(OUTPUT)

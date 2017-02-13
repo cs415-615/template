@@ -31,3 +31,10 @@ cp ../makefile .
 make
 srun -n16 ../bin/mpi_hello
 ```
+To clean the files you've created, there is an extra target, `clean`.
+Also, there is a running target that may be changed as per assignment requirements, `run`.
+These are for convienience only, you may add/remove them as necessary.
+```bash
+make clean
+make run
+```
