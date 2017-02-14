@@ -2,17 +2,23 @@
 BUILD_DIR="build/"
 
 # building setup
-if [ -d "$BUILD_DIR" ]; then
+if [ ! -d "$BUILD_DIR" ]; then
 	mkdir build
-	cp makefile build/makefile
-fi	
+fi
 cd build
+cp ../makefile .
 
 # building
 make
 
 # running
 make run
+# be sure to add more commands from your makefile here
+# for example, you may create a target called run_single and run_double
+# (for running on a double box) that contains some special flags.
+# so you may include echo that says what you're doing, and then do it
+# Ex:)
+# echo "PA1 on single box" && make run_single
 
-# cleaning
-make clean
+# cleaning (optional for build script)
+# make clean

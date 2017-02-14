@@ -16,6 +16,13 @@ ssh username@h1.cse.unr.edu
 There are two options to build this project, CMake or Makefile.  CMake makes including new libraries easier, and handles new files added automatically to the src and include directory.  CMake, however, requires a small new learning curve, but it will make things easier in the long run.  Also, it is recommended to learn CMake for industry C/C++.
 The second option is to use the provided Makefile, which is easier to look at and compile from.
 
+# Quick running
+You may simple run the build script with a few commands.
+```bash
+chmod +x buildscript.sh
+./buildscript
+```
+
 Running the make in a separate directory will allow easy cleanup of the build data, and an easy way to prevent unnecessary data to be added to the git repository.  
 
 ### CMake Instructions
