@@ -19,9 +19,7 @@ The second option is to use the provided Makefile, which is easier to look at an
 
 ## Building and Compiling
 ```bash
-mkdir build
 cd build
-cp ../makefile .
 make
 
 # to clean
