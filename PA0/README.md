@@ -35,6 +35,7 @@ __When copying into your repository, open this file, and change `mail-user` to y
 
 This will be run by using:
 ```bash
+cd build
 sbatch run.sh
 ```
 
